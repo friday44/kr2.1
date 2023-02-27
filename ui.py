@@ -7,7 +7,9 @@ def get_comand():
     print('1 - добавление заметки')
     print('2 - поиск заметки')
     print('3 - показать все заметки')
-    print('4 - выход из программы')
+    print('4 - редактировать заметку')
+    print('5 - удалить заметку')
+    print('6 - выход из программы')
     return input('Введите номер операции: ')
 
 def get_data():
@@ -22,8 +24,14 @@ def get_data():
 def get_find_string():
     return input('Введите слово для поиска: ')
 
+def get_edit_note():
+    return input('Введите номер заметки для редактирования: ')
+
+def get_del_note():
+    return input('Введите номер заметки для удаления: ')
+
 def print_data(data):
-    # print(data)
-    for i in data:
-        for j in i:
-            print(j)
+    print(data)
+    # for i in data:
+    #     for j in i:
+    #         print(j)
