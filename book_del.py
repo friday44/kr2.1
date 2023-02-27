@@ -5,10 +5,7 @@ def del_data(find_str):
         reader = csv.reader(data, delimiter = ';')
         result = []
         for row in reader:
-            count = 0
-            if find_str in row:
-                count +=1
-            else:    
+            if find_str not in row:
                 result.append(row)
     #print(result)    
     with open('book.csv', "w") as data:
