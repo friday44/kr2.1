@@ -13,7 +13,7 @@ def get_comand():
 def get_data():
     now = datetime.datetime.now()
     book_entry = []
-    book_entry.append(book_id.get_id)
+    book_entry.append(book_id.get_id())
     book_entry.append(input('Введите заголовок заметки: '))
     book_entry.append(input('Введите текст заметки: '))
     book_entry.append(now.strftime("%d-%m-%Y %H:%M"))
