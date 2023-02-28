@@ -3,6 +3,7 @@ import book_save as bs
 import book_find as bf
 import book_show as bsh
 import book_del as bd
+import book_edit as be
 
 
 def button_click():
@@ -19,7 +20,7 @@ def button_click():
             ui.print_data(bsh.show_data())
 
         elif operation == '4':
-            ui.print_data(bf.find_data(ui.get_find_string())) # + принять новую запись и перезаписать файл без старой заметки, но с новой
+            ui.print_data(be.edit_data(ui.get_find_string()))
 
         elif operation == '5':
             bd.del_data(ui.get_find_string())
