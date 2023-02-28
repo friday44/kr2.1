@@ -8,7 +8,7 @@ def get_comand():
     print('4 - редактировать заметку')
     print('5 - удалить заметку')
     print('6 - выход из программы')
-    return input('Введите номер операции: ')
+    return int(input('Введите номер операции: '))
 
 def get_data():
     now = datetime.datetime.now()
@@ -37,8 +37,11 @@ def get_edit_note():
 def get_del_note():
     return input('Введите номер заметки для удаления: ')
 
+def rez_del_note():
+    print('Заметка удалена')
+
 def print_data(data):
-    print(data)
-    # for i in data:
-    #     for j in i:
-    #         print(j)
+    # print(data)
+    for i in data:
+        for j in i:
+            print(j)

@@ -8,7 +8,7 @@ def del_data(find_str):
         for row in reader:
             if find_str not in row:
                 result.append(row)
-    #print(result)    
+       
     with open('book.csv', "w", newline = '') as data:
         writer = csv.writer(data, delimiter = ';')
         writer.writerows(result)

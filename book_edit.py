@@ -11,7 +11,7 @@ def edit_data(find_str):
                 result.append(ui.get_edit_data(find_str))
             else:
                 result.append(row)
-    #print(result)    
+       
     with open('book.csv', "w", newline = '') as data:
         writer = csv.writer(data, delimiter = ';')
         writer.writerows(result)
