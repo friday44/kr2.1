@@ -1,7 +1,5 @@
 import datetime
-from constants import *
 import book_id
-import csv
 
 def get_comand():
     print('1 - добавление заметки')

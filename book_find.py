@@ -1,6 +1,7 @@
 import csv
 
 def find_data(find_str):
+    open('book.csv','a+')
     with open('book.csv', "r") as data:
         reader = csv.reader(data, delimiter = ';')
         result = []

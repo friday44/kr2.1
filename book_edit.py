@@ -2,7 +2,8 @@ import csv
 import ui
 
 def edit_data(find_str):
-    with open('book.csv', "r") as data:
+    open('book.csv','a+')
+    with open('book.csv', "r", newline = '') as data:
         reader = csv.reader(data, delimiter = ';')
         result = []
         for row in reader:
@@ -11,6 +12,6 @@ def edit_data(find_str):
             else:
                 result.append(row)
     #print(result)    
-    with open('book.csv', "w") as data:
+    with open('book.csv', "w", newline = '') as data:
         writer = csv.writer(data, delimiter = ';')
         writer.writerows(result)

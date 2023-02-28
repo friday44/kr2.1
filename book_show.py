@@ -1,7 +1,8 @@
 import csv
 
 def show_data():
-    with open('book.csv', "r") as data:
+    open('book.csv','a+')
+    with open('book.csv', "r", newline = '') as data:
         reader = csv.reader(data, delimiter = ';')
         result_all = []
         for row in reader:
